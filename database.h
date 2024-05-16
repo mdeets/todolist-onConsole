@@ -29,8 +29,6 @@ public:
     explicit DataBase(QObject *parent = nullptr);
     ~DataBase();
     bool init(const QString& path, const QString& fileName);
-    bool exec(QSqlQuery& query);
-    bool next(QSqlQuery& query);
     QSqlDatabase *getDatabase();
 
 signals:
